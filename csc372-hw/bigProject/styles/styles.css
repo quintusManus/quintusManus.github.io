@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Splash Section */
+#splash {
+    text-align: center;
+    padding: 2rem;
+    background: url('../images/splash.jpg') no-repeat center center/cover;
+    color: #333;
+    ;
+}
+
+#splash h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#splash p {
+    font-size: 1.2rem;
+}
+
+#splash button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Search Section */
+#search {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#search input[type="text"] {
+    padding: 0.5rem;
+    width: 50%;
+    max-width: 300px;
+}
+
+#search button {
+    padding: 0.5rem 1rem;
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.product-item {
+    width: 30%;
+    background-color: #f4f4f4;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 0.5rem 0;
+}
+
+/* Sorting/Filter Controls */
+.controls {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+* Product Details Section */ .product-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+/* Ensure the image scales responsively */
+.product-details img {
+    max-width: 100%;
+    /* Prevents the image from exceeding its container's width */
+    height: auto;
+    /* Maintains the aspect ratio */
+    display: block;
+    /* Removes any inline spacing issues */
+}
+
+/* Optional: Adjust layout on smaller screens */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        /* Stacks the image and info vertically */
+    }
+
+    .product-details img,
+    .product-info {
+        max-width: 100%;
+    }
+}
+
+.product-info {
+    padding: 1rem;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

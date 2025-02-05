@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Tech Store - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>The Tech Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Splash Section -->
+    <section id="splash">
+        <h2>Welcome to The Tech Store!</h2>
+        <p>Experience cutting edge technology at unbelievable prices!</p>
+        <button onclick="location.href='products.html'">Shop Now</button>
+    </section>
+
+    <!-- Search Field -->
+    <section id="search">
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Search products..." required>
+            <button type="submit">Go</button>
+        </form>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <!-- Product 1: RTX 5070 -->
+            <article class="product-item">
+                <img src="images/1_rtx-5070-1024x683.webp" alt="RTX 5070">
+                <h3>RTX 5070</h3>
+                <p>$29.99</p>
+                <a href="details.html">View Details</a>
+            </article>
+
+            <!-- Product 2: RTX 5080 -->
+            <article class="product-item">
+                <img src="images/rtx-50801.webp" alt="RTX 5080">
+                <h3>RTX 5080</h3>
+                <p>$39.99</p>
+                <a href="details.html">View Details</a>
+            </article>
+
+            <!-- Product 3: RTX 5090 -->
+            <article class="product-item">
+                <img src="images/rtx-5090-1024x683.webp" alt="RTX 5090">
+                <h3>RTX 5090</h3>
+                <p>$49.99</p>
+                <a href="details.html">View Details</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Tech Store. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
