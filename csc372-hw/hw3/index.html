@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+  Name: Benjamin Woods
+  Date: 02.17.2024
+  CSC 372-01, UNCG
+
+  Description:
+  Main page for food & drink recommendations near the Petty building.
+  Includes 3 restaurants, each with 3 recommended dishes.
+  Clicking on any dish image enlarges it and displays its description/cost.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Foodie Adventures at UNCG</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Foodie Adventures Near Petty</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- Link to the meal plan page -->
+        <li><a href="mealplan.html">Meal Plan</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Introduction Section -->
+      <section class="introduction">
+        <h2>Welcome Food Explorers!</h2>
+        <p>
+          Are you looking for the best food close to the Petty building?! You're
+          in luck! I've got you covered with some of my favorite food spots.
+          Whether you’re grabbing a quick bite or planning a full-course feast,
+          these local gems are all within walking distance from the Petty
+          building. Bon appétit!
+        </p>
+      </section>
+
+      <!-- 1) Don -->
+      <article class="restaurant">
+        <h2>Don - Japanese Restarant</h2>
+        <p><strong>Location:</strong> Tate St (0.3 miles from Petty)</p>
+        <p><strong>Specialties:</strong> Donburi, teriyaki, ramen</p>
+        <p><strong>Hours:</strong> 11:00 AM – 3:30 PM (Mon–Fri)</p>
+        <p>
+          My favorite restaurant on campus for a reason! The hibachi chicken don
+          is amazing, and my go to, but honestly choose with your eyes closed
+          and you won't go wrong.
+        </p>
+        <!-- Three Dishes (Image Gallery) -->
+        <div class="dish-gallery" id="spartan-pizza-gallery">
+          <img
+            src="images/ramen.png"
+            alt="Ramen"
+            data-dish-name="Ramen"
+            data-dish-desc="Classic mouthwatering ramen."
+            data-dish-cost="9.99"
+            data-credit="Image from Google Maps"
+          />
+          <img
+            src="images/Salmon.png"
+            alt="Salmon Teriyaki"
+            data-dish-name="Salmon Teriyaki"
+            data-dish-desc="Melt in your mouth salmon teriyaki."
+            data-dish-cost="10.49"
+            data-credit="Image from Google Maps"
+          />
+          <img
+            src="images/HibachiChicken.jpeg"
+            alt="Hibachi Chicken Don"
+            data-dish-name="Hibachi Chicken Don"
+            data-dish-desc="Steaming bowl of hibachi chicken with delicate vegetables and rice."
+            data-dish-cost="10.99"
+            data-credit="Image from Me"
+          />
+        </div>
+      </article>
+
+      <!-- 2) Tate Street Coffee House -->
+      <article class="restaurant">
+        <h2>Tate Street Coffee House</h2>
+        <p><strong>Location:</strong> Tate St (0.3 miles from Petty)</p>
+        <p>
+          <strong>Specialties:</strong> Coffee, pastries, breakfast sandwiches
+        </p>
+        <p>
+          <strong>Hours:</strong> 6:30 AM – 6:00 PM (Mon–Fri), 7:00 AM – 6:00 PM
+          (Sat-Sun)
+        </p>
+        <p>
+          A cozy coffee house on Tate Street offering hot and cold beverages,
+          freshly baked pastries, and quick breakfast options. The deserts are
+          also switched out periodically, in case you get tired of the same ole'
+          same ole'. Ideal for a morning boost or an afternoon study session.
+          Also a great place to meet new friends!
+        </p>
+        <!-- Three Dishes (Image Gallery) -->
+        <div class="dish-gallery" id="tate-street-gallery">
+          <img
+            src="images/iced.png"
+            alt="Iced Caramel Latte"
+            data-dish-name="Iced Caramel Latte"
+            data-dish-desc="Smooth espresso blended with caramel syrup and cold milk."
+            data-dish-cost="4.50"
+            data-credit="Image from Pexels"
+          />
+          <img
+            src="images/blueberrymuffins.png"
+            alt="Blueberry Muffin"
+            data-dish-name="Blueberry Muffin"
+            data-dish-desc="Freshly baked muffin bursting with sweet blueberries."
+            data-dish-cost="2.75"
+            data-credit="Image from Google Maps"
+          />
+          <img
+            src="images/sandwhich.png"
+            alt="Sausage Egg and Cheese Sandwich"
+            data-dish-name="Sausage Egg and Cheese Sandwich"
+            data-dish-desc="Sausage egg and cheese, but on a bagel."
+            data-dish-cost="5.25"
+            data-credit="Image from Google Maps"
+          />
+        </div>
+      </article>
+
+      <!-- 3) Chipotle Mexican Grill -->
+      <article class="restaurant">
+        <h2>Chipotle Mexican Grill</h2>
+        <p>
+          <strong>Location:</strong> Tate St, Greensboro, NC (approx. 0.3 miles
+          from Petty)
+        </p>
+        <p>
+          <strong>Specialties:</strong> Burritos, bowls, tacos, and quesadillas
+        </p>
+        <p><strong>Hours:</strong> 10:45 AM – 11:00 PM (Mon–Sun)</p>
+        <p>
+          Chipotle Mexican Grill offers a variety of fresh, customizable Mexican
+          fare. Known for its bold flavors and quality ingredients, it’s the
+          perfect spot for a quick and satisfying meal on campus. Tell them you
+          sent me and you'll get a 50 percent discount! Okay, you won't, but
+          wouldn't that be great?
+        </p>
+        <!-- Three Dishes (Image Gallery) -->
+        <div class="dish-gallery" id="chipotle-gallery">
+          <img
+            src="images/burrito.png"
+            alt="Burrito"
+            data-dish-name="Burrito"
+            data-dish-desc="A hearty burrito packed with anything you want."
+            data-dish-cost="8.99"
+            data-credit="Image from Chipotle"
+          />
+          <img
+            src="images/bowl.png"
+            alt="Burrito Bowl"
+            data-dish-name="Burrito Bowl"
+            data-dish-desc="A delicious bowl featuring anything you want!"
+            data-dish-cost="9.49"
+            data-credit="Image from Chipotle"
+          />
+          <img
+            src="images/quesadilla.png"
+            alt="Quesadilla"
+            data-dish-name="Quesadilla"
+            data-dish-desc="Chipotle's famous cheesy quesadilla."
+            data-dish-cost="7.99"
+            data-credit="Image from Chipotle"
+          />
+        </div>
+      </article>
+    </main>
+
+    <!-- Dish Description (Displays the selected dish info) -->
+    <aside id="selected-dish-info" class="dish-info hidden">
+      <h3 id="dish-name"></h3>
+      <p id="dish-desc"></p>
+      <p><strong>Cost:</strong> $<span id="dish-cost"></span></p>
+      <p id="dish-credit" class="image-credit"></p>
+    </aside>
+
+    <footer>
+      <p>&copy; 2024 Benjamin Woods, UNCG. All images cited respectively.</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

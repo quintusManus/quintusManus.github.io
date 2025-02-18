@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+  Name: Benjamin Woods
+  Date: 02.17.2024
+  CSC 372-01, UNCG
+
+  Description:
+  Meal Plan page. Displays all recommended dishes on the left.
+  Users can add dishes to a "meal plan" on the right, track total cost,
+  remove items, or add more orders.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Meal Plan Builder</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meal Plan Builder</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mealplan.html">Meal Plan</a></li>
+      </ul>
+    </nav>
+
+    <main class="mealplan-container">
+      <!-- LEFT: List of recommended dishes -->
+      <section id="all-dishes" class="all-dishes">
+        <h2>Recommended Dishes</h2>
+        <ul>
+          <!-- Don - Japanese Restaurant -->
+          <li>
+            Ramen - $9.99
+            <button class="add-btn" data-dish="Ramen" data-cost="9.99">
+              Add
+            </button>
+          </li>
+          <li>
+            Salmon Teriyaki - $10.49
+            <button
+              class="add-btn"
+              data-dish="Salmon Teriyaki"
+              data-cost="10.49"
+            >
+              Add
+            </button>
+          </li>
+          <li>
+            Hibachi Chicken Don - $10.99
+            <button
+              class="add-btn"
+              data-dish="Hibachi Chicken Don"
+              data-cost="10.99"
+            >
+              Add
+            </button>
+          </li>
+
+          <!-- Tate Street Coffee House -->
+          <li>
+            Iced Caramel Latte - $4.50
+            <button
+              class="add-btn"
+              data-dish="Iced Caramel Latte"
+              data-cost="4.50"
+            >
+              Add
+            </button>
+          </li>
+          <li>
+            Blueberry Muffin - $2.75
+            <button
+              class="add-btn"
+              data-dish="Blueberry Muffin"
+              data-cost="2.75"
+            >
+              Add
+            </button>
+          </li>
+          <li>
+            Sausage Egg and Cheese Sandwich - $5.25
+            <button
+              class="add-btn"
+              data-dish="Sausage Egg and Cheese Sandwich"
+              data-cost="5.25"
+            >
+              Add
+            </button>
+          </li>
+
+          <!-- Chipotle Mexican Grill -->
+          <li>
+            Burrito - $8.99
+            <button class="add-btn" data-dish="Burrito" data-cost="8.99">
+              Add
+            </button>
+          </li>
+          <li>
+            Burrito Bowl - $9.49
+            <button class="add-btn" data-dish="Burrito Bowl" data-cost="9.49">
+              Add
+            </button>
+          </li>
+          <li>
+            Quesadilla - $7.99
+            <button class="add-btn" data-dish="Quesadilla" data-cost="7.99">
+              Add
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- RIGHT: Meal plan summary -->
+      <section id="meal-plan" class="meal-plan">
+        <h2>Your Meal Plan</h2>
+        <table id="meal-plan-table">
+          <thead>
+            <tr>
+              <th>Dish</th>
+              <th>Qty</th>
+              <th>Cost Each</th>
+              <th>Subtotal</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamically updated rows go here -->
+          </tbody>
+        </table>
+        <p class="total-cost">
+          <strong>Total Cost:</strong> $<span id="total-cost">0.00</span>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Benjamin Woods, UNCG</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

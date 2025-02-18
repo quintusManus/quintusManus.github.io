@@ -1,0 +1,143 @@
+/*
+  Name: Benjamin Woods
+  Date: 02.17.2024
+  CSC 372-01, UNCG
+
+  Description:
+  External stylesheet for hw3. Includes gallery styles, meal plan layout, 
+  and general site styling.
+*/
+
+/* General Reset / Base Styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0.5em 0;
+}
+
+/* Layout for main pages */
+header,
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1em;
+}
+nav ul {
+  background-color: #ccc;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  padding: 0.5em;
+  margin: 0;
+}
+nav li {
+  margin: 0;
+}
+
+/* Introduction Section */
+.introduction {
+  padding: 1em;
+  background-color: #fff;
+  margin: 1em;
+  border-radius: 4px;
+}
+
+/* Restaurant Articles */
+.restaurant {
+  background-color: #fff;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+/* Dish Gallery */
+.dish-gallery {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+.dish-gallery img {
+  width: 80px; /* small by default */
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+.dish-gallery img:hover {
+  transform: scale(1.05);
+}
+/* Enlarged dish image */
+.dish-gallery img.selected-dish {
+  width: 300px; /* up to 300px max */
+  border-color: #333;
+}
+
+/* Dish Info Aside */
+.dish-info {
+  background-color: #fff;
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+.hidden {
+  display: none;
+}
+.image-credit {
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Meal Plan Layout */
+.mealplan-container {
+  display: flex;
+  gap: 2em;
+  margin: 1em;
+}
+.all-dishes,
+.meal-plan {
+  background-color: #fff;
+  padding: 1em;
+  flex: 1;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+}
+.all-dishes ul li {
+  margin: 0.5em 0;
+}
+.add-btn {
+  margin-left: 0.5em;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+}
+.meal-plan table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.meal-plan th,
+.meal-plan td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: center;
+}
+.total-cost {
+  margin-top: 1em;
+  font-size: 1.2em;
+  text-align: right;
+}
