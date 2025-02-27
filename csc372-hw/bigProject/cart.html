@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+  Name: Benjamin Woods
+  Date: 02.26.2025
+  CSC 372-01
+
+  This file provides a prototype of the shopping cart page for The Tech Store.
+  It shows items, quantity, price, and a subtotal with tax and a checkout button.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping Cart - The Tech Store</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">The Tech Store</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="products.html">products</a></li>
+          <li><a href="cart.html">cart</a></li>
+          <li><a href="#">sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>your shopping cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>item</th>
+            <th>name</th>
+            <th>price</th>
+            <th>quantity</th>
+            <th>total</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="images/1_rtx-5070-1024x683.webp"
+                alt="RTX 5070"
+                width="50"
+              />
+            </td>
+            <td>RTX 5070</td>
+            <td>$29.99</td>
+            <td><input type="number" value="2" min="1" /></td>
+            <td>$59.98</td>
+            <td><button>Remove</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/rtx-50801.webp" alt="RTX 5080" width="50" />
+            </td>
+            <td>RTX 5080</td>
+            <td>$39.99</td>
+            <td><input type="number" value="1" min="1" /></td>
+            <td>$39.99</td>
+            <td><button>Remove</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="images/rtx-5090-1024x683.webp"
+                alt="RTX 5090"
+                width="50"
+              />
+            </td>
+            <td>RTX 5090</td>
+            <td>$49.99</td>
+            <td><input type="number" value="1" min="1" /></td>
+            <td>$49.99</td>
+            <td><button>Remove</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Subtotal: $149.96</h3>
+      <h3>Tax (6.75%): $10.12</h3>
+      <h3>Total: $160.08</h3>
+      <button>Checkout</button>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 The Tech Store. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

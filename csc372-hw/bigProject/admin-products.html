@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+  Name: Benjamin Woods
+  Date: 02.26.2025
+  CSC 372-01
+
+  This file provides the admin product listings page for The Tech Store. 
+  It includes an overview of products and admin actions (edit, delete, archive).
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Product Listings - The Tech Store</title>
+    <link rel="stylesheet" href="styles/admin.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Panel - Product Listings</h1>
+      <nav>
+        <ul>
+          <li><a href="admin-upload.html">Bulk Upload</a></li>
+          <li><a href="admin-products.html">Product Listings</a></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>All Products</h2>
+      <input type="text" placeholder="Search by product or category" />
+      <button>Add New Product</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>RTX 5070</td>
+            <td>Graphics Cards</td>
+            <td>$29.99</td>
+            <td>
+              <a href="product-edit.html">Edit</a> | <a href="#">Delete</a> |
+              <a href="#">Archive</a>
+            </td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 The Tech Store. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

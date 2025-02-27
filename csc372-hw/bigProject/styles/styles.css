@@ -1,158 +1,187 @@
-/* styles.css */
+/*
+  Name: Benjamin Woods
+  Date: 02.26.2025
+  CSC 372-01
 
-/* Global Styles */
+  Description:
+  This CSS file provides styling for the public-facing pages of The Tech Store.
+  It includes layout rules for the header, navigation, product lists, and more.
+*/
+
+/* -------- Generic / Base Rules -------- */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header and Navigation */
+/* -------- Header & Navigation -------- */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
-    margin: 0;
+  margin: 0;
+  text-transform: lowercase; /* consistent styling */
 }
 
 header h1 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-header nav ul li {
-    margin-left: 1rem;
+nav ul li {
+  margin-left: 1rem;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: lowercase; /* consistent styling */
 }
 
-/* Splash Section */
+/* -------- Splash Section -------- */
 #splash {
-    text-align: center;
-    padding: 2rem;
-    background: url('../images/splash.jpg') no-repeat center center/cover;
-    color: #333;
-    ;
+  text-align: center;
+  padding: 2rem;
+  background: url("../images/splash.jpg") no-repeat center center/cover;
+  color: #333;
 }
 
 #splash h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 #splash p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-#splash button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
+.shop-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  transition: background 0.2s;
+}
+.shop-button:hover {
+  background: #ddd;
 }
 
-/* Search Section */
+/* -------- Search Section -------- */
 #search {
-    text-align: center;
-    margin: 2rem 0;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 #search input[type="text"] {
-    padding: 0.5rem;
-    width: 50%;
-    max-width: 300px;
+  padding: 0.5rem;
+  width: 50%;
+  max-width: 300px;
 }
 
 #search button {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
-/* Product List */
+/* -------- Product List -------- */
 .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem;
 }
 
 .product-item {
-    width: 30%;
-    background-color: #f4f4f4;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    text-align: center;
-    box-sizing: border-box;
+  width: 30%;
+  background-color: #f4f4f4;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .product-item img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .product-item h3 {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
-/* Sorting/Filter Controls */
+/* -------- Sorting/Filter Controls -------- */
 .controls {
-    text-align: center;
-    margin: 1rem 0;
+  text-align: center;
+  margin: 1rem 0;
 }
 
-* Product Details Section */ .product-details {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2rem;
+/* -------- Product Details Section -------- */
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
 }
 
-/* Ensure the image scales responsively */
 .product-details img {
-    max-width: 100%;
-    /* Prevents the image from exceeding its container's width */
-    height: auto;
-    /* Maintains the aspect ratio */
-    display: block;
-    /* Removes any inline spacing issues */
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Optional: Adjust layout on smaller screens */
 @media (max-width: 768px) {
-    .product-details {
-        flex-direction: column;
-        /* Stacks the image and info vertically */
-    }
+  .product-details {
+    flex-direction: column;
+  }
 
-    .product-details img,
-    .product-info {
-        max-width: 100%;
-    }
+  .product-details img,
+  .product-info {
+    max-width: 100%;
+  }
 }
 
 .product-info {
-    padding: 1rem;
-    max-width: 50%;
-    box-sizing: border-box;
+  padding: 1rem;
+  max-width: 50%;
+  box-sizing: border-box;
 }
 
+/* -------- Cart Table -------- */
+main table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main table,
+main th,
+main td {
+  border: 1px solid #ddd;
+}
+main th,
+main td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* -------- Footer -------- */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
