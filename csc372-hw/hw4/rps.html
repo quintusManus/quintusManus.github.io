@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+  Name: Benjamin Woods
+  Date: 03.01.2025
+  CSC 372-01
+
+  This is a single-page Rock-Paper-Scissors game. It includes three sections: player throw, 
+  computer throw, and outcome, along with a scoreboard and reset button.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="css/rps.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors Game</h1>
+    </header>
+
+    <main>
+      <!-- Player Throw Section -->
+      <section id="player-section">
+        <h2>Your Throw</h2>
+        <div class="throws-container">
+          <!-- Each figure has a 'data-move' attribute for identification -->
+          <figure class="player-throw" data-move="rock">
+            <img src="images/rock.png" alt="Rock" />
+            <figcaption>Rock</figcaption>
+          </figure>
+          <figure class="player-throw" data-move="paper">
+            <img src="images/paper.png" alt="Paper" />
+            <figcaption>Paper</figcaption>
+          </figure>
+          <figure class="player-throw" data-move="scissors">
+            <img src="images/scissors.png" alt="Scissors" />
+            <figcaption>Scissors</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Computer Throw Section -->
+      <section id="computer-section">
+        <h2>Computer Throw</h2>
+        <!-- We start with the question mark image -->
+        <figure id="computer-figure">
+          <img src="images/question.png" alt="Computer's Throw" />
+          <figcaption id="computer-caption">???</figcaption>
+        </figure>
+      </section>
+
+      <!-- Outcome Section -->
+      <section id="outcome-section">
+        <h2>Outcome</h2>
+        <p id="outcome-message">No winner yet.</p>
+
+        <!-- Extra Credit: Scoreboard -->
+        <div id="scoreboard">
+          <p>Wins: <span id="score-wins">0</span></p>
+          <p>Losses: <span id="score-losses">0</span></p>
+          <p>Ties: <span id="score-ties">0</span></p>
+        </div>
+
+        <button id="reset-button">Reset</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="js/rps.js"></script>
+  </body>
+</html>

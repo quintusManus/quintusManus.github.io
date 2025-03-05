@@ -1,0 +1,98 @@
+/*
+  Name: Benjamin Woods
+  Date: 03.01.2025
+  CSC 372-01
+
+  Description:
+  This stylesheet handles all styles for the Rock-Paper-Scissors game page,
+  including layout, highlighting the player's throw, and basic layout for
+  the scoreboard and outcome section.
+*/
+
+/* Generic Reset / Base */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Player Section */
+  .throws-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .player-throw {
+    border: 2px solid transparent;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .player-throw img {
+    width: 80px;
+    height: auto;
+  }
+  .player-throw:hover {
+    border-color: #ccc;
+  }
+  
+  /* Selected throw highlight */
+  .player-throw.selected {
+    border-color: red;
+  }
+  
+  /* Computer Section */
+  #computer-figure {
+    margin-top: 1rem;
+  }
+  #computer-figure img {
+    width: 80px;
+    height: auto;
+  }
+  
+  /* Outcome Section */
+  #outcome-section {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+  }
+  
+  /* Scoreboard */
+  #scoreboard {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
