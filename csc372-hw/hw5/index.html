@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+  Date: 03.13.2025
+  CSC 372-01
+
+  This is a single-page GitHub Gallery application. It uses the GitHub API (via fetch) 
+  to retrieve repositories for a given username, and displays them in a flex layout.
+  Each repo shows name, description, creation date, update date, watchers, 
+  commit count, languages, and a direct link to the repository.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>GitHub Gallery</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GitHub Gallery</h1>
+    </header>
+
+    <main>
+      <!-- Search Form -->
+      <section id="search-section">
+        <label for="username-input">Enter GitHub Username:</label>
+        <input
+          type="text"
+          id="username-input"
+          placeholder="e.g., quintusManus"
+          value="quintusManus"
+        />
+        <button id="search-button">Search</button>
+      </section>
+
+      <!-- Gallery Container -->
+      <section id="gallery-section">
+        <!-- JavaScript will insert repo cards here -->
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
