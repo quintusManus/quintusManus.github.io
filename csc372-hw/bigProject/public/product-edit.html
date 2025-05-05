@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+  Name: Benjamin Woods
+  Date: 02.26.2025
+  CSC 372-01
+
+  This file allows an admin to edit an existing product's details 
+  (name, description, category, image path, and price).
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Product - The Tech Store</title>
+    <link rel="stylesheet" href="styles/admin.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Panel - Edit Product</h1>
+      <nav>
+        <ul>
+          <li><a href="admin-upload.html">Bulk Upload</a></li>
+          <li><a href="admin-products.html">Product Listings</a></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Edit Product Details</h2>
+      <form id="product-form">
+        <p id="product-id"></p>
+        <label>
+          Name:
+          <input id="name" name="name" type="text" value="" required />
+        </label>
+        <br />
+        <label>
+          Description:
+          <textarea id="description" name="description" required></textarea>
+        </label>
+        <br />
+        <label>
+          Category:
+          <select id="category" name="category_id" required></select>
+        </label>
+        <br />
+        <label>
+          Image URL:
+          <input id="image_url" name="image_url" type="text" value="" required />
+        </label>
+        <br />
+        <label>
+          Price:
+          <input id="price" name="price" type="number" step="0.01" value="" required />
+        </label>
+        <br />
+        <button type="submit">Save Changes</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 The Tech Store. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts/product-edit.js" defer></script>
+  </body>
+</html>

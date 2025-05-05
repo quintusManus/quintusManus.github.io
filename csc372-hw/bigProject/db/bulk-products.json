@@ -1,0 +1,39 @@
+{
+    "products": [
+      {
+        "name": "RTX 5080",
+        "description": "Top-tier GPU for ultra-smooth 4K gaming",
+        "image": "images/rtx-50801.webp",
+        "price": 20.00,
+        "category": "Graphics Cards"
+      },
+      {
+        "name": "RTX 5090",
+        "description": "Next-gen GPU with ray tracing and AI acceleration",
+        "image": "images/rtx-5090-1024x683.webp",
+        "price": 30.00,
+        "category": "Graphics Cards"
+      },
+      {
+        "name": "Core i13 Extreme",
+        "description": "Revolutionary 16-core CPU for pro tasks",
+        "image": "images/intel_i9.png",
+        "price": 15.00,
+        "category": "CPUs"
+      },
+      {
+        "name": "Mechanical Keyboard Pro",
+        "description": "Premium tactile switches with customizable macros",
+        "image": "images/mech_kb.png",
+        "price": 1.00,
+        "category": "Accessories"
+      },
+      {
+        "name": "Ultra Gaming Laptop X",
+        "description": "Portable powerhouse with RTX-class graphics",
+        "image": "images/gaming_laptop.png",
+        "price": 100.00,
+        "category": "Laptops"
+      }
+    ]
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+  Name: Benjamin Woods
+  Date: 02.26.2025
+  CSC 372-01
+
+  This is the main landing page (index.html) for The Tech Store, 
+  showcasing featured products and quick navigation to the products page.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Tech Store - Home</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>the tech store</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="products.html">products</a></li>
+          <li><a href="cart.html">cart</a></li>
+          <li><a href="#">sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+    <section id="splash">
+      <h2>welcome to the tech store!</h2>
+      <p>experience cutting-edge technology at unbelievable prices!</p>
+      <!-- Instead of inline JS, we use a simple link -->
+      <a href="products.html" class="shop-button">Shop Now</a>
+    </section>
+
+    <section id="search">
+      <form action="#" method="get">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search products..."
+          required
+        />
+        <button type="submit">Go</button>
+      </form>
+    </section>
+
+    <section id="featured-products">
+      <h2>featured products</h2>
+      <div class="product-list">
+        <!-- Product 1: RTX 5070 -->
+        <article class="product-item">
+          <img src="images/1_rtx-5070-1024x683.webp" alt="RTX 5070" />
+          <h3>RTX 5070</h3>
+          <p>$29.99</p>
+          <a href="details.html">View Details</a>
+        </article>
+
+        <!-- Product 2: RTX 5080 -->
+        <article class="product-item">
+          <img src="images/rtx-50801.webp" alt="RTX 5080" />
+          <h3>RTX 5080</h3>
+          <p>$39.99</p>
+          <a href="details.html">View Details</a>
+        </article>
+
+        <!-- Product 3: RTX 5090 -->
+        <article class="product-item">
+          <img src="images/rtx-5090-1024x683.webp" alt="RTX 5090" />
+          <h3>RTX 5090</h3>
+          <p>$49.99</p>
+          <a href="details.html">View Details</a>
+        </article>
+      </div>
+    </section>
+    <!-- Random quote section -->
+    <section id="quote">
+      <h2>Advice of the Moment</h2>
+      <blockquote id="quote-text">Loading quote...</blockquote>
+      <p id="quote-author"></p>
+    </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 The Tech Store. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts/index.js" defer></script>
+  </body>
+</html>
