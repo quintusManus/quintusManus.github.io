@@ -76,6 +76,27 @@ function searchProducts(keyword) {
 }
 
 /**
+ * Get products by category ID.
+ * @param {number} categoryId
+ * @return {Promise<Array>} array of product objects in that category
+ */
+function getProductsByCategory(categoryId) {
+  return new Promise((resolve, reject) => {
+    const sql = `
+      SELECT p.*, c.name AS category_name
+      FROM products p
+      JOIN categories c ON p.category_id = c.id
+      WHERE p.category_id = ?
+      ORDER BY p.id DESC
+    `;
+    db.all(sql, [categoryId], (err, rows) => {
+      if (err) return reject(err);
+      resolve(rows);
+    });
+  });
+}
+
+/**
  * Insert a new product (admin).
  * @param {object} productData
  * @return {Promise<number>} newly inserted product ID
@@ -141,6 +162,7 @@ module.exports = {
   getAllProducts,
   getProductById,
   searchProducts,
+  getProductsByCategory,
   createProduct,
   updateProduct,
   deleteProduct,

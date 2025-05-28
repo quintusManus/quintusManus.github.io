@@ -6,7 +6,15 @@ const productModel = require('../models/productModel');
 
 async function listAllProducts(req, res) {
   try {
-    const products = await productModel.getAllProducts();
+    // Allows optional filtering by category via query param: /api/products?category=<id>
+    const { category } = req.query;
+    let products;
+    if (category) {
+      const categoryId = parseInt(category, 10);
+      products = await productModel.getProductsByCategory(categoryId);
+    } else {
+      products = await productModel.getAllProducts();
+    }
     res.json(products);
   } catch (err) {
     console.error('Error in listAllProducts:', err);
