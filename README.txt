@@ -2,7 +2,8 @@ My Github Pages site
 
 
 
-
+A little bit about myself and projects I've done. 
+Take a look! 
 
 
 
